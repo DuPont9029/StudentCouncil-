@@ -1,0 +1,61 @@
+body {
+    background-image: url('../images/techbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* This will scale the background image to cover the entire container */
+    background-position: center; /* This will center the background image */
+    margin:  0; /* Rimuove i margini predefiniti del body */
+    padding:  0; /* Rimuove il padding predefinito del body */
+    height:  100vh;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+}
+
+.dark-theme-form {
+    display: flex;
+    flex-direction: column;
+    max-width:  300px;
+    margin: auto;
+    padding:  20px;
+    border-radius:  5px;
+    background-color: #333;
+}
+
+.dark-theme-form label {
+    margin-bottom:  5px;
+}
+
+.dark-theme-form input[type="date"],
+.dark-theme-form input[type="text"] {
+    margin-bottom:  15px;
+    padding:  5px;
+    border: none;
+    border-radius:  3px;
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-theme-form button {
+    padding:  10px  20px;
+    border: none;
+    border-radius:  3px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dark-theme-form button:hover {
+    background-color: #666;
+}
+
+.centered-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  10px; /* Optional: adds space between the input and button */
+}

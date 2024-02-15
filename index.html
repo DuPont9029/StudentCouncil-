@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOCX Templater</title>
+    <link rel="stylesheet" href="./src/stylesheet.css">
+</head>
+<body>
+
+    <form class="dark-theme-form">
+        <label for="dataDiConvocazione">Data di Convocazione:</label>
+        <input type="date" id="dataDiConvocazione" name="dataDiConvocazione">
+        
+        <label for="ordineDelGiorno1">Ordine del Giorno  1:</label>
+        <input type="text" id="ordineDelGiorno1" name="ordineDelGiorno1">
+        
+        <label for="ordineDelGiorno2">Ordine del Giorno  2:</label>
+        <input type="text" id="ordineDelGiorno2" name="ordineDelGiorno2">
+        
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <a id="downloadLink" hidden>Download Modified DOCX</a>
+
+
+    <script src="./src/script.js" type="module"></script>
+    <script src="./libraries/docxtemplater.js"></script>
+</body>
+</html>
