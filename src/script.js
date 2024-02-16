@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Prevent the default form submission behavior
 
         try {
-            const response = await fetch('../assets/rai.docx');
+            const response = await fetch('./assets/rai.docx');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
