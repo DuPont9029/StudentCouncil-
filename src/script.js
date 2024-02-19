@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Prevent the default form submission behavior
 
         try {
+<<<<<<< HEAD
 
 
             const date = new Date(dataDiConvocazione);
@@ -42,6 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(formattedDate1); // Esempio di output: "15/04/23"
 
             const response = await fetch('../assets/rai.docx');
+=======
+            const response = await fetch('./assets/rai.docx');
+>>>>>>> e6664f48119e45b56544afacbabbdfe3af4fcee4
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
