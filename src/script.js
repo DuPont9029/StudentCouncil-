@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
             console.log(formattedDate1); // Esempio di output: "15/04/23"
 
-            const response = await fetch('../assets/rai.docx');
+            const response = await fetch('./assets/rai.docx');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
