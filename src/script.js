@@ -18,10 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const dataDiConvocazioneElement = document.getElementById('dataDiConvocazione');
-    const dataDiConvocazione = dataDiConvocazioneElement.value;
 
-    // Converti la stringa in un oggetto Date
+
 
 
     const submitButton = document.querySelector('.dark-theme-form button[type="submit"]');
@@ -30,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
 
+            const dataDiConvocazioneElement = document.getElementById('dataDiConvocazione');
+            const dataDiConvocazione = dataDiConvocazioneElement.value;
+        
+                // Converti la stringa in un oggetto Date
 
             const date = new Date(dataDiConvocazione);
 
@@ -101,6 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+
+
+
+
 
 
 
