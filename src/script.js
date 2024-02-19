@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tempAnchor.click(); // Simulate a click on the anchor
             document.body.removeChild(tempAnchor); // Remove the anchor from the body
 
+            location.reload()
 
         } catch (error) {
             console.error('There was a problem with the fetch operation:', error);
