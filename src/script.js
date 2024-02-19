@@ -22,21 +22,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataDiConvocazione = dataDiConvocazioneElement.value;
 
     // Converti la stringa in un oggetto Date
-    const date = new Date(dataDiConvocazione);
 
-    // Formatta la data nel formato dd/mm/yy
-    const day1 = String(date.getDate()).padStart(2, '0');
-    const month1 = String(date.getMonth() +  1).padStart(2, '0'); // I mesi sono zero-based, quindi aggiungi  1
-    const year1 = date.getFullYear().toString().slice(-2); // Ottieni gli ultimi due caratteri dell'anno
-    const formattedDate1 = `${day1}/${month1}/${year1}`;
-
-    console.log(formattedDate); // Esempio di output: "15/04/23"
 
     const submitButton = document.querySelector('.dark-theme-form button[type="submit"]');
     submitButton.addEventListener('click', async function(event) {
         event.preventDefault(); // Prevent the default form submission behavior
 
         try {
+
+
+            const date = new Date(dataDiConvocazione);
+
+            // Formatta la data nel formato dd/mm/yy
+            const day1 = String(date.getDate()).padStart(2, '0');
+            const month1 = String(date.getMonth() +  1).padStart(2, '0'); // I mesi sono zero-based, quindi aggiungi  1
+            const year1 = date.getFullYear().toString().slice(-2); // Ottieni gli ultimi due caratteri dell'anno
+            const formattedDate1 = `${day1}/${month1}/${year1}`;
+        
+            console.log(formattedDate1); // Esempio di output: "15/04/23"
+
             const response = await fetch('../assets/rai.docx');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
