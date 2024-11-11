@@ -1,8 +1,10 @@
 import "../libraries/pizzip.js"
 import "../libraries/filesaver.js"
 import "../libraries/pizzip-utils.js"
-// Access Docxtemplater through the global window object
 
+import { rappresentanti } from  "../src/rappresentanti.js"
+
+// Access Docxtemplater through the global window object
 const doc = new window.docxtemplater();
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -62,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Set the data for the template
             doc.setData({
-                rappresentante1: 'David Novelli',
-                rappresentante2: 'Tommaso Coviello',
-                rappresentante3: 'Ferri Ludovica',
-                rappresentante4: 'Rosario Esmeralda Yoshimi',
+                rappresentante1: rappresentanti[0],
+                rappresentante2: rappresentanti[1],
+                rappresentante3: rappresentanti[2],
+                rappresentante4: rappresentanti[3],
                 ComputerConnessoAinternet: 'Computer connesso a internet',
                 proiettore: 'proiettore',
                 datadiconvocazione: formattedDate1,
